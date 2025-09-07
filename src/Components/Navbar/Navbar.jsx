@@ -1,16 +1,17 @@
 import React from 'react';
+import { NavLink } from 'react-router';
 
 const Navbar = () => {
 
     const links = <>
-        <li>Home</li>
-        <li>My-Bookings</li>
-        <li>Blogs</li>
-        <li>Contact Us</li>
+        <NavLink to="/" className={({ isActive }) => (isActive ? 'border-b-3 border-[#176AE5]' : '')}><li className='font-medium'>Home</li></NavLink>
+        <NavLink to="/my-bookings" className={({ isActive }) => (isActive ? 'border-b-3 border-[#176AE5]' : '')}><li className='font-medium'>My-Bookings</li></NavLink>
+        <NavLink to="/blogs" className={({ isActive }) => (isActive ? 'border-b-3 border-[#176AE5]' : '')}><li className='font-medium'>Blogs</li></NavLink>
+        <NavLink to="/contactUs" className={({ isActive }) => (isActive ? 'border-b-3 border-[#176AE5]' : '')}><li className='font-medium'>Contact Us</li></NavLink>
     </>
 
     return (
-        <div className="navbar bg-base-100 shadow-sm">
+        <div className="navbar lg:w-4/5 mx-auto py-5">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -19,20 +20,21 @@ const Navbar = () => {
                     {/* small device */}
                     <ul
                         tabIndex={0}
-                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                        <li><a>{links}</a></li>
+                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow gap-4">
+                        {links}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">daisyUI</a>
+                <img className='hidden md:block lg:h-[46px] lg:w-[46px]' src="logo.png" alt="Logo" />
+                <a className="btn btn-ghost text-[32px] font-extrabold">DocTime</a>
             </div>
             {/* Large Device */}
-            <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1">
-                    <li><a>{links}</a></li>
+            <div className="navbar-center hidden lg:flex ">
+                <ul className="menu menu-horizontal px-1 lg:gap-12 opacity-70 text-[18px]">
+                    {links}
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Button</a>
+                <a className="btn bg-[#176AE5] text-white font-bold lg:text-[20px] rounded-3xl lg:px-[30px] lg:py-[20px]">Emergency</a>
             </div>
         </div>
     );
