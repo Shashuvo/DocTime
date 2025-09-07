@@ -17,9 +17,9 @@ const Footer = () => {
             <footer className="footer footer-horizontal footer-center text-base-content rounded p-10 bg-white">
                 {/* Logo + Title */}
                 <nav>
-                    <div className='flex'>
+                    <div className='flex items-center '>
                         <img className=' h-[46px] w-[46px]' src="logo.png" alt="Logo" />
-                        <a className="btn btn-ghost text-[32px] font-extrabold">DocTime</a>
+                        <a className="btn btn-ghost text-[32px] font-extrabold hover:bg-[#176AE5] hover:text-white ">DocTime</a>
                     </div>
                 </nav>
                 {/* Links */}
