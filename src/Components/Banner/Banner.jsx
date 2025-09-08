@@ -3,7 +3,7 @@ import bannerImg from '../../assets/banner-img-1.png'
 
 const Banner = () => {
     return (
-        <div className='border-3 bg-linear-to-b from-[#FFFFFF]/0 to-[#FFFFFF]/100 border-white w-11/12 mx-auto rounded-3xl'>
+        <div className='border-3 bg-linear-to-b from-[#FFFFFF]/0 to-[#FFFFFF]/100 border-white w-11/12 mx-auto rounded-3xl mb-20'>
             {/* title and description */}
             <div className='pt-8 lg:pt-16 w-3/4 mx-auto mb-6'>
                 <h1 className='font-extrabold text-2xl lg:text-5xl text-center mb-4'>Dependable Care, Backed by Trusted <br className='hidden' />Professionals.</h1>

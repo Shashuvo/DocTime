@@ -4,7 +4,6 @@ import Root from '../Pages/Root/Root';
 import Home from '../Pages/Home/Home';
 import MyBookings from '../Pages/MyBookings/MyBookings';
 import Blogs from '../Pages/Blogs/Blogs';
-import ContactUs from '../Pages/ContactUs/ContactUs';
 import ErrorPage from '../Pages/ErrorPage/ErrorPage';
 
 const router =createBrowserRouter([
@@ -28,7 +27,7 @@ const router =createBrowserRouter([
             },
             {
                 path:"/contactUs",
-                Component:ContactUs
+                element:<ErrorPage></ErrorPage>
             }
         ]
     }
