@@ -5,7 +5,6 @@ import Doctors from '../../Components/Doctors/Doctors';
 import MedicalServices from '../../Components/MedicalServices/MedicalServices';
 const Home = () => {
     const details = useLoaderData();
-    console.log(details);
     return (
         <div>
             {/* Banner */}

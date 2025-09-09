@@ -1,5 +1,6 @@
 import React from 'react';
 import { PiTrademarkRegisteredLight } from 'react-icons/pi';
+import { Link } from 'react-router';
 
 const Doctor = ({ doctor }) => {
     const { image, name, experience, education, speciality, hospital, registration_number, available_days } = doctor;
@@ -31,9 +32,9 @@ const Doctor = ({ doctor }) => {
 
                     <p className='mb-2 flex gap-2 items-center font-medium text-[18px] opacity-70'><PiTrademarkRegisteredLight size={30} />Reg No: {registration_number}</p>
                     <div>
-                        <button
+                        <Link to={`/doctorDetails/${registration_number}`}><button
                             className="btn btn-outline btn-primary w-full rounded-4xl text-[20px] text-[#176AE5] font-bold border-[#176AE5] hover:bg-[#176AE5] hover:text-white">
-                            View Details</button>
+                            View Details</button></Link>
                     </div>
                 </div>
             </div>

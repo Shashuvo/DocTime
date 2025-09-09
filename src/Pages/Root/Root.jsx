@@ -14,7 +14,7 @@ const Root = () => {
             {location.pathname !== "/contactUs" && <Navbar></Navbar>}
             {
                 isLoading && (
-                    <div className="fixed inset-0 flex justify-center items-center bg-black/30 z-50">
+                    <div className="fixed inset-0 flex justify-center items-center bg-black/40 z-50">
                         <span className="loading loading-bars loading-xl"></span>
                     </div>
                 )
