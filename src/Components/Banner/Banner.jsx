@@ -15,9 +15,9 @@ const Banner = () => {
                 <button className="btn btn-outline w-full lg:w-1/4 rounded-3xl bg-[#176AE5] text-white hover:bg-white hover:text-[#176AE5] hover:border-2 hover:border-[#176AE5] ">Search Now</button>
             </div>
             {/* image */}
-            <div className='flex pb-[64px] w-11/12 mx-auto gap-6'>
+            <div className='flex justify-center items-center pb-[64px] w-4/5 lg:w-4/6 mx-auto gap-6'>
                 <img src={bannerImg} alt="Banner Image" />
-                <img className='hidden md:block' src={bannerImg} alt="Banner Image" />
+                <img className='hidden lg:block' src={bannerImg} alt="Banner Image" />
             </div>
         </div>
     );

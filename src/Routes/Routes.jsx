@@ -6,28 +6,32 @@ import MyBookings from '../Pages/MyBookings/MyBookings';
 import Blogs from '../Pages/Blogs/Blogs';
 import ErrorPage from '../Pages/ErrorPage/ErrorPage';
 
-const router =createBrowserRouter([
+const router = createBrowserRouter([
     {
         path: "/",
         Component: Root,
         errorElement: <ErrorPage></ErrorPage>,
-        children:[
+        children: [
             {
                 index: true,
                 path: "/",
+                loader: async () => {
+                    await new Promise(resolve => setTimeout(resolve, 250));
+                    return fetch('/doctorsData.json')
+                },
                 Component: Home
             },
             {
-                path:"/my-bookings",
-                Component:MyBookings
+                path: "/my-bookings",
+                Component: MyBookings
             },
             {
-                path:"/blogs",
-                Component:Blogs
+                path: "/blogs",
+                Component: Blogs
             },
             {
-                path:"/contactUs",
-                element:<ErrorPage></ErrorPage>
+                path: "/contactUs",
+                element: <ErrorPage></ErrorPage>
             }
         ]
     }

@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "image": "https://i.ibb.co.com/21gFwH6b/doctor1.png",
+        "image": "https://res.cloudinary.com/dsehrbpom/image/upload/v1757352021/doctor-1_gkfk8i.jpg",
         "name": "Dr. Ayaan Khan",
         "education": "MBBS, MD",
         "speciality": "Cardiologist",
@@ -13,7 +13,7 @@
     },
     {
         "id": 2,
-        "image": "https://i.ibb.co.com/GfGdCKcr/doctor2.jpg",
+        "image": "https://res.cloudinary.com/dsehrbpom/image/upload/v1757352066/doctor-10_x91pxs.jpg",
         "name": "Dr. Zayd Rahman",
         "education": "MBBS, MS",
         "speciality": "Orthopedic Surgeon",
@@ -25,7 +25,7 @@
     },
     {
         "id": 3,
-        "image": "https://i.ibb.co.com/VYpCGL2V/doctor3.jpg",
+        "image": "https://res.cloudinary.com/dsehrbpom/image/upload/v1757352069/doctor-9_pmgtm2.jpg",
         "name": "Dr. Idris Malik",
         "education": "MBBS, DCH",
         "speciality": "Pediatrician",
@@ -37,7 +37,7 @@
     },
     {
         "id": 4,
-        "image": "https://i.ibb.co.com/4RCy33gy/doctor4.jpg",
+        "image": "https://res.cloudinary.com/dsehrbpom/image/upload/v1757352249/doctor-2_dpjwx4.jpg",
         "name": "Dr. Musa Ali",
         "education": "MBBS, MD",
         "speciality": "General Physician",
@@ -49,7 +49,7 @@
     },
     {
         "id": 5,
-        "image": "https://i.ibb.co.com/HLPN9t0j/doctor5.jpg",
+        "image": "https://res.cloudinary.com/dsehrbpom/image/upload/v1757352080/doctor-5_erflnb.jpg",
         "name": "Dr. Tariq Saeed",
         "education": "MBBS, MS",
         "speciality": "Neurosurgeon",
@@ -61,7 +61,7 @@
     },
     {
         "id": 6,
-        "image": "https://i.ibb.co.com/ZzHTCygL/doctor6.jpg",
+        "image": "https://res.cloudinary.com/dsehrbpom/image/upload/v1757352031/doctor-7_vub3o4.jpg",
         "name": "Dr. Ayesha Siddique",
         "education": "MBBS, DGO",
         "speciality": "Gynecologist",
@@ -73,7 +73,7 @@
     },
     {
         "id": 7,
-        "image": "https://i.ibb.co.com/bjHQckmv/doctor7.jpg",
+        "image": "https://res.cloudinary.com/dsehrbpom/image/upload/v1757352076/doctor-12_i0dvqn.jpg",
         "name": "Dr. Hamza Farooq",
         "education": "MBBS, MD",
         "speciality": "Dermatologist",
@@ -85,7 +85,7 @@
     },
     {
         "id": 8,
-        "image": "https://i.ibb.co.com/Xf7G1M6S/doctor8.jpg",
+        "image": "https://res.cloudinary.com/dsehrbpom/image/upload/v1757352074/doctor-8_ld60ye.jpg",
         "name": "Dr. Nabeel Azhar",
         "education": "MBBS, MS",
         "speciality": "ENT Specialist",
@@ -97,7 +97,7 @@
     },
     {
         "id": 9,
-        "image": "https://i.ibb.co.com/C5FcPTJm/doctor9.jpg",
+        "image": "https://res.cloudinary.com/dsehrbpom/image/upload/v1757353093/doctor-11_xp2gha.jpg",
         "name": "Dr. Bilal Hashmi",
         "education": "MBBS, MD",
         "speciality": "Psychiatrist",
@@ -109,7 +109,7 @@
     },
     {
         "id": 10,
-        "image": "https://i.ibb.co.com/XxdSXqqz/doctor10.jpg",
+        "image": "https://res.cloudinary.com/dsehrbpom/image/upload/v1757353093/doctor-4_gdz40t.jpg",
         "name": "Dr. Fahad Qureshi",
         "education": "MBBS, DM",
         "speciality": "Endocrinologist",
@@ -121,7 +121,7 @@
     },
     {
         "id": 11,
-        "image": "https://i.ibb.co.com/QvJZLK0y/doctor11.jpg",
+        "image": "https://res.cloudinary.com/dsehrbpom/image/upload/v1757353093/doctor-3_zjja6x.jpg",
         "name": "Dr. Salman Javed",
         "education": "MBBS, MD",
         "speciality": "Pulmonologist",
@@ -133,7 +133,7 @@
     },
     {
         "id": 12,
-        "image": "https://i.ibb.co.com/ns06NNCW/doctor12.jpg",
+        "image": "https://res.cloudinary.com/dsehrbpom/image/upload/v1757353093/doctor-6_by7urb.jpg",
         "name": "Dr. Yasir Naveed",
         "education": "MBBS, MS",
         "speciality": "Urologist",
