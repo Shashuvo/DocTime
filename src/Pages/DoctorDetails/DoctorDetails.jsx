@@ -1,10 +1,13 @@
 import React from 'react';
 import { PiTrademarkRegisteredLight } from 'react-icons/pi';
-import { useLoaderData, useParams } from 'react-router';
+import { useLoaderData, useNavigate, useParams } from 'react-router';
 import AvailableDay from '../../Components/AvailableDay/AvailableDay';
 import { MdErrorOutline } from 'react-icons/md';
+import addToStoredDoctor from '../../Utilities/AddToDB/addToDB';
+import { ToastContainer, toast } from 'react-toastify';
 
 const DoctorDetails = () => {
+    const navigate = useNavigate();
     const { registration_number } = useParams();
     const data = useLoaderData();
     console.log(registration_number, data);
@@ -14,11 +17,25 @@ const DoctorDetails = () => {
     const today = new Date().toLocaleString('en-US', { weekday: 'long' });
     const isAvailable = available_days.includes(today);
 
+    const handleDoctorAppointment = (registration_number) => {
+        const isNew = addToStoredDoctor(registration_number);
+        if (isNew) {
+            toast.success(`Your appointment with ${name} has been scheduled successfully.`, {
+                autoClose: 2000,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+            });
 
-    
+            setTimeout(() => {
+                navigate("/my-bookings");
+            }, 2000)
+        }
+    }
 
     return (
         <div className='w-4/5 mx-auto mb-[78px]'>
+            <ToastContainer />
             {/* profile details */}
             <div className='bg-white rounded-2xl mb-8'>
                 <h1 className='text-center font-extrabold text-xl lg:text-[32px] pt-[40px] pb-2'>Doctor’s Profile Details</h1>
@@ -77,7 +94,13 @@ const DoctorDetails = () => {
                         </p>
                     </div>
                     <div className='w-full md:w-11/12 mx-auto mt-[36px] pb-[56px]'>
-                        <button disabled={!isAvailable} className={`btn btn-outline py-6 w-full btn-primary rounded-4xl text-[20px]  font-bold ${isAvailable ? 'text-white bg-[#176AE5] hover:border-2 hover:border-[#176AE5] hover:bg-white hover:text-[#176AE5]' : "Cursor Not Available"} `}>Book Appointment Now</button>
+                        <button onClick={() => handleDoctorAppointment(registration_number)}
+                            disabled={!isAvailable}
+                            className={`btn btn-outline py-6 w-full btn-primary rounded-4xl text-[20px]  font-bold 
+                          ${isAvailable ?
+                                    'text-white bg-[#176AE5] hover:border-2 hover:border-[#176AE5] hover:bg-white hover:text-[#176AE5]' :
+                                    "Cursor Not Available"} `}>
+                            Book Appointment Now</button>
                     </div>
                 </div>
             </div>
