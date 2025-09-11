@@ -10,7 +10,7 @@ const Doctor = ({ doctor }) => {
 
     return (
         <div>
-            <div className="card bg-base-100 w-96 shadow-sm p-8 rounded-2xl">
+            <div className="card bg-base-100 w-90 shadow-sm p-8 rounded-2xl">
                 <figure className='rounded-2xl'>
                     <img
                         className='w-full h-[248px] rounded-2xl'
