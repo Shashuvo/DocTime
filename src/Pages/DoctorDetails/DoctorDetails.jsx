@@ -3,8 +3,8 @@ import { PiTrademarkRegisteredLight } from 'react-icons/pi';
 import { useLoaderData, useNavigate, useParams } from 'react-router';
 import AvailableDay from '../../Components/AvailableDay/AvailableDay';
 import { MdErrorOutline } from 'react-icons/md';
-import addToStoredDoctor from '../../Utilities/AddToDB/addToDB';
 import { ToastContainer, toast } from 'react-toastify';
+import { addToStoredDoctor } from '../../Utilities/AddToDB/addToDB';
 
 const DoctorDetails = () => {
     const navigate = useNavigate();

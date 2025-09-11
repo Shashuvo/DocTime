@@ -29,6 +29,4 @@ const addToStoredDoctor = (registration_number) => {
         return true;
     }
 }
-
-
-export default addToStoredDoctor;
+export {addToStoredDoctor, getStoredDoctor};

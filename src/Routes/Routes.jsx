@@ -28,6 +28,10 @@ const router = createBrowserRouter([
             },
             {
                 path: "/my-bookings",
+                loader: async () => {
+                    await new Promise(resolve => setTimeout(resolve,250));
+                    return fetch('/doctorsData.json')
+                },
                 Component: MyBookings
             },
             {
