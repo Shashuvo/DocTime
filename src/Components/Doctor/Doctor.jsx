@@ -10,7 +10,7 @@ const Doctor = ({ doctor }) => {
 
     return (
         <div>
-            <div className="card bg-base-100 w-90 shadow-sm p-8 rounded-2xl">
+            <div className="card bg-base-100 w-80 md:w-96 shadow-sm p-8 rounded-2xl">
                 <figure className='rounded-2xl'>
                     <img
                         className='w-full h-[248px] rounded-2xl'
@@ -22,7 +22,7 @@ const Doctor = ({ doctor }) => {
                         <div className={`badge rounded-2xl p-3 font-medium text-sm ${isAvailable ? "text-[#09982F] bg-[#09982F]/10 border-[#09982F]/20" : "text-[#982F09] bg-[#982F09]/10 border-[#982F09]/20"}`}>
                             {isAvailable ? 'Available' : 'Unavailable'}
                         </div>
-                        <div className="badge rounded-2xl text-[#176AE5] bg-[#176AE5]/10 border-[#176AE5]/20 p-3 font-medium text-sm">{experience} Experience</div>
+                        <div className="badge rounded-2xl text-[#176AE5] bg-[#176AE5]/10 border-[#176AE5]/20 py-3 px-1 md:p-3 font-medium text-[12px] lg:text-sm">{experience} Experience</div>
                     </div>
                     <h2 className="card-title mb-2 text-2xl font-extrabold">
                         {name}

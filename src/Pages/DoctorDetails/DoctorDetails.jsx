@@ -54,7 +54,7 @@ const DoctorDetails = () => {
                     </div>
                     {/* content container */}
                     <div className='w-11/12 lg:w-2/3 flex justify-center flex-col text-center md:text-start lg:h-full '>
-                        <h1 className="text-[32px] font-extrabold mb-2">{name}</h1>
+                        <h1 className=" text-3xl md:text-[32px] font-extrabold mb-2">{name}</h1>
                         <p className='font-medium text-[18px] opacity-60'>{education}</p>
                         <p className='font-medium text-[18px] opacity-60'>{speciality}</p>
                         <div className='my-2 '>
@@ -62,7 +62,7 @@ const DoctorDetails = () => {
                             <p className='font-bold text-[20px]'>{hospital}</p>
                         </div>
                         <div className=' border-b-2 border-dashed border-black/20 w-full my-3'></div>
-                        <p className='flex gap-2 font-medium text-[18px] opacity-70  items-center'><PiTrademarkRegisteredLight size={30} />Reg No: {registration_number}</p>
+                        <p className='flex gap-2 font-medium text-16px md:text-[18px] opacity-70  items-center'><PiTrademarkRegisteredLight size={30} />Reg No: {registration_number}</p>
                         <div className=' border-b-2 border-dashed border-black/20 w-full my-4'></div>
                         <p className='flex flex-col md:flex-row gap-2 items-center mb-3'><span className='font-bold'>Availability:</span>
                             {
@@ -82,7 +82,7 @@ const DoctorDetails = () => {
                     <div className=' border-b-2 border-dashed border-black/20 w-full my-4'></div>
                     <div className='flex justify-between items-center'>
                         <h3 className='font-bold text-[18px]'>Availability</h3>
-                        <p className={`badge font-medium text-[12px] md:text-[14px] rounded-4xl py-[14px] px-3 ${isAvailable ? "text-[#09982F] bg-[#09982F]/10 border-[#09982F]/20" : "text-[#982F09] bg-[#982F09]/10 border-[#982F09]/20"}`}>
+                        <p className={`badge font-medium text-[12px] md:text-[14px] rounded-4xl px-1 py-[14px] lg:px-3 ${isAvailable ? "text-[#09982F] bg-[#09982F]/10 border-[#09982F]/20" : "text-[#982F09] bg-[#982F09]/10 border-[#982F09]/20"}`}>
                             {isAvailable ? 'Doctor Available Today' : 'Doctor Not Available Today'}
                         </p>
                     </div>
@@ -96,7 +96,7 @@ const DoctorDetails = () => {
                     <div className='w-full md:w-11/12 mx-auto mt-[36px] pb-[56px]'>
                         <button onClick={() => handleDoctorAppointment(registration_number)}
                             disabled={!isAvailable}
-                            className={`btn btn-outline py-6 w-full btn-primary rounded-4xl text-[20px]  font-bold 
+                            className={`btn btn-outline py-6 w-full btn-primary rounded-4xl text-[18px] md:text-[20px]  font-bold 
                           ${isAvailable ?
                                     'text-white bg-[#176AE5] hover:border-2 hover:border-[#176AE5] hover:bg-white hover:text-[#176AE5]' :
                                     "Cursor Not Available"} `}>

@@ -17,14 +17,14 @@ const Footer = () => {
             <footer className="footer footer-horizontal footer-center text-base-content rounded p-10 bg-white">
                 {/* Logo + Title */}
                 <nav>
-                    <div className='flex items-center '>
+                    <div className='flex items-center justify-center '>
                         <img className=' h-[46px] w-[46px]' src="logo.png" alt="Logo" />
                         <a className="btn btn-ghost text-[32px] font-extrabold hover:bg-[#176AE5] hover:text-white ">DocTime</a>
                     </div>
                 </nav>
                 {/* Links */}
                 <nav className="grid grid-flow-col gap-4 border-b-3 border-base-300 lg:w-3/5 pb-12">
-                    <div className='flex lg:gap-12 lg:text-[18px] opacity-70 gap-4'>
+                    <div className='flex justify-center items-center lg:gap-12 lg:text-[18px] opacity-70 gap-4'>
                         {links}
                     </div>
                 </nav>

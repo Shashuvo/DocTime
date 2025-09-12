@@ -8,7 +8,7 @@ import CountUp from 'react-countup';
 
 const MedicalServices = () => {
     return (
-        <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-6'>
+        <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-6 justify-center items-center'>
             <div className="card bg-base-100 w-full shadow-sm rounded-2xl flex items-start px-12 py-10">
                 <figure>
                     <img
