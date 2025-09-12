@@ -29,4 +29,11 @@ const addToStoredDoctor = (registration_number) => {
         return true;
     }
 }
-export {addToStoredDoctor, getStoredDoctor};
+
+
+const removeFromDB = (registration_number) => {
+    const storedDoctorData = getStoredDoctor();
+    const updatedDoctorData = storedDoctorData.filter((storedRegistration_number) => storedRegistration_number !== registration_number);
+    localStorage.setItem('appointments', JSON.stringify(updatedDoctorData));
+}
+export { addToStoredDoctor, getStoredDoctor, removeFromDB };

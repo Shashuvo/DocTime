@@ -1,7 +1,14 @@
 import React from 'react';
+import { removeFromDB } from '../../Utilities/AddToDB/addToDB';
 
-const AppointmentListCard = ({ appointment }) => {
-    const { name, education, speciality, fee } = appointment;
+const AppointmentListCard = ({ appointment, onCancel }) => {
+    const { registration_number, name, education, speciality, fee } = appointment;
+
+    const handleCancelAppointment = (registration_number) => {
+        removeFromDB(registration_number);
+        onCancel(registration_number);
+    }
+
     return (
 
         <div className='flex flex-col mb-8 bg-white rounded-3xl'>
@@ -16,7 +23,7 @@ const AppointmentListCard = ({ appointment }) => {
                     </div>
                 </div>
                 <div className=' border-b-2 border-dashed border-black/20 w-full my-4'></div>
-                <button className='w-full font-semibold text-[18px] md:text-[20px] py-3 bg-white text-[#FF0000] hover:bg-[#FF0000] hover:text-white duration-300 btn transition rounded-full border-2 border-[#FF0000]'>Cancel Appointment</button>
+                <button onClick={() => handleCancelAppointment(registration_number)} className='w-full font-semibold text-[18px] md:text-[20px] py-3 bg-white text-[#FF0000] hover:bg-[#FF0000] hover:text-white duration-300 btn transition rounded-full border-2 border-[#FF0000]'>Cancel Appointment</button>
             </div>
         </div>
 
