@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "question": "What is useState and how does it work in React?",
+      "answer": "useState is a React hook that allows you to add state to functional components. It returns a state variable and a function to update that state. When the state is updated, React re-renders the component to reflect the new value. Example: const [count, setCount] = useState(0);",
+      "date": "2025-09-12"
+    },
+    {
+      "id": 2,
+      "question": "What is the purpose of useEffect in React?",
+      "answer": "useEffect is a React hook that lets you perform side effects in functional components, such as fetching data, subscribing to events, or manually updating the DOM. You can control when the effect runs by specifying dependencies in an array. Example: useEffect(() => { fetchData(); }, [dependency]);",
+      "date": "2025-09-12"
+    },
+    {
+      "id": 3,
+      "question": "What is a custom hook in React and when should you use one?",
+      "answer": "A custom hook is a reusable function in React that uses built-in hooks like useState or useEffect to encapsulate common logic. You should use custom hooks to avoid code duplication and make your components cleaner and more maintainable. Example: function useFetch(url) { const [data, setData] = useState(null); useEffect(() => { fetch(url).then(res => res.json()).then(setData); }, [url]); return data; }",
+      "date": "2025-09-12"
+    },
+    {
+      "id": 4,
+      "question": "Difference between controlled and uncontrolled components? Which one is better?",
+      "answer": "Controlled components in React are form elements whose values are managed by React state, meaning the component has full control over the input. Uncontrolled components use the DOM to store values, and React reads the value using refs. Controlled components are generally better because they allow easy validation, conditional rendering, and predictable behavior, though uncontrolled components can be simpler for quick forms.",
+      "date": "2025-09-12"
+    },
+    {
+      "id": 5,
+      "question": "Tell us something about useFormStatus() (explore and explain)",
+      "answer": "useFormStatus() is a React hook provided by frameworks like Remix to track the status of a form, such as whether it is currently submitting. It returns an object with properties like 'pending' and 'idle' that help you control UI behavior, e.g., disabling a submit button while the form is submitting. Example: const { pending } = useFormStatus(); return <button disabled={pending}>Submit</button>;",
+      "date": "2025-09-12"
+    }
+  ]
+  

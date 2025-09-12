@@ -29,13 +29,17 @@ const router = createBrowserRouter([
             {
                 path: "/my-bookings",
                 loader: async () => {
-                    await new Promise(resolve => setTimeout(resolve,250));
+                    await new Promise(resolve => setTimeout(resolve, 250));
                     return fetch('/doctorsData.json')
                 },
                 Component: MyBookings
             },
             {
                 path: "/blogs",
+                loader: async () => {
+                    await new Promise(resolve => setTimeout(resolve, 250));
+                    return fetch('/blogs.json')
+                },
                 Component: Blogs
             },
             {
@@ -43,12 +47,12 @@ const router = createBrowserRouter([
                 element: <ErrorPage></ErrorPage>
             },
             {
-                path:"/doctorDetails/:registration_number",
+                path: "/doctorDetails/:registration_number",
                 loader: async () => {
-                    await new Promise(resolve => setTimeout(resolve,250));
+                    await new Promise(resolve => setTimeout(resolve, 250));
                     return fetch('/doctorsData.json')
                 },
-                Component:DoctorDetails,
+                Component: DoctorDetails,
             },
         ]
     }
