@@ -10,7 +10,6 @@ const DoctorDetails = () => {
     const navigate = useNavigate();
     const { registration_number } = useParams();
     const data = useLoaderData();
-    console.log(registration_number, data);
     const showDoctor = data.find((doctor) => doctor.registration_number === registration_number);
     const { image, name, education, speciality, hospital, available_days, fee } = showDoctor;
 

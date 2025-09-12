@@ -6,6 +6,7 @@ import MyBookings from '../Pages/MyBookings/MyBookings';
 import Blogs from '../Pages/Blogs/Blogs';
 import ErrorPage from '../Pages/ErrorPage/ErrorPage';
 import DoctorDetails from '../Pages/DoctorDetails/DoctorDetails';
+import NoDoctor from '../Pages/NoDoctor/NoDoctor';
 
 const router = createBrowserRouter([
     {
@@ -53,6 +54,7 @@ const router = createBrowserRouter([
                     return fetch('/doctorsData.json')
                 },
                 Component: DoctorDetails,
+                errorElement: <NoDoctor></NoDoctor>
             },
         ]
     }
